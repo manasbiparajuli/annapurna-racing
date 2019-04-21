@@ -29,6 +29,5 @@ public class CarController : MonoBehaviour
 
 		// Rotate the car around y-axis
 		transform.Rotate(0, rotation, 0);
-
     }
 }
