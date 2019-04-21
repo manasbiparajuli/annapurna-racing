@@ -5,7 +5,7 @@ using UnityEngine;
 public class CarController : MonoBehaviour
 {
 	[SerializeField] public float speed = 60.0f;
-	[SerializeField] public float rotationSpeed = 100.0f;
+	[SerializeField] public float rotationSpeed = 30.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +29,5 @@ public class CarController : MonoBehaviour
 
 		// Rotate the car around y-axis
 		transform.Rotate(0, rotation, 0);
-    }
+	}
 }
