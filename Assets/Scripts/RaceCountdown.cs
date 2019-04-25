@@ -11,6 +11,7 @@ public class RaceCountdown : MonoBehaviour
 
 	[SerializeField] public AudioSource getReady;
 	[SerializeField] public AudioSource goAudio;
+	[SerializeField] public AudioSource levelMusic;
 
 	void Start()
     {
@@ -45,6 +46,7 @@ public class RaceCountdown : MonoBehaviour
 		yield return new WaitForSeconds(1);
 		countDown.SetActive(false);
 		goAudio.Play();
+		levelMusic.Play();
 
 		// Initiate our lap timer and allow the player to control the car
 		LapTimer.SetActive(true);

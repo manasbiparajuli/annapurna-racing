@@ -27,15 +27,19 @@ public class LapComplete : MonoBehaviour
 
 		if (LapTimeManager.minuteCount <= 9)
 		{
-			minuteLabel.GetComponent<Text>().text = "0" + LapTimeManager.minuteCount + ".";
+			minuteLabel.GetComponent<Text>().text = "0" + LapTimeManager.minuteCount + ":";
 		}
 		else
 		{
-			minuteLabel.GetComponent<Text>().text = "" + LapTimeManager.minuteCount + ".";
+			minuteLabel.GetComponent<Text>().text = "" + LapTimeManager.minuteCount + ":";
 		}
 
 		milliSecLabel.GetComponent<Text>().text = "" + LapTimeManager.milliSecCount;
 
+		// save player's best lap time for future races
+		PlayerPrefs.SetInt("minSave", LapTimeManager.minuteCount);
+		PlayerPrefs.SetInt("secSave", LapTimeManager.secondCount);
+		PlayerPrefs.SetFloat("milliSecSave", LapTimeManager.milliSecCount);
 
 		LapTimeManager.minuteCount = 0;
 		LapTimeManager.secondCount = 0;
