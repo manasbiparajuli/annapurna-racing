@@ -12,12 +12,22 @@ public class LapComplete : MonoBehaviour
 	[SerializeField] public GameObject secondLabel;
 	[SerializeField] public GameObject milliSecLabel;
 
-	[SerializeField] public GameObject lapTimeLabel;
-
 	[SerializeField] public GameObject lapCounter;
-	[SerializeField] public int lapsCompleted;
 
+	[SerializeField] public GameObject raceComplete;
+
+	[SerializeField] public int lapsCompleted;
 	[SerializeField] public float rawTime;
+
+	private void Update()
+	{
+		// Check if the racer completed total game laps
+		if (lapsCompleted == 1)
+		{
+			// activate the cutscene after race has ended
+			raceComplete.SetActive(true);
+		}
+	}
 
 	private void OnTriggerEnter(Collider other)
 	{
