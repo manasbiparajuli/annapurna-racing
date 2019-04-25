@@ -14,6 +14,7 @@ public class LapTimeManager : MonoBehaviour
 	[SerializeField] public GameObject secondLabel;
 	[SerializeField] public GameObject milliSecLabel;
 
+	[SerializeField] public static float rawTime;
 
     // Update is called once per frame
     void Update()
@@ -22,6 +23,9 @@ public class LapTimeManager : MonoBehaviour
 		milliSecCount += Time.deltaTime * 10;
 		milliDisplay = milliSecCount.ToString("F0");
 		milliSecLabel.GetComponent<Text>().text = "" + milliDisplay;
+
+		// get the raw time for the race
+		rawTime += Time.deltaTime;
 
 		// Add a second once 10 milliseconds pass during the lap time
 		if (milliSecCount >=  10)

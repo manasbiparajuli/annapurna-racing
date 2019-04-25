@@ -14,37 +14,61 @@ public class LapComplete : MonoBehaviour
 
 	[SerializeField] public GameObject lapTimeLabel;
 
+	[SerializeField] public GameObject lapCounter;
+	[SerializeField] public int lapsCompleted;
+
+	[SerializeField] public float rawTime;
+
 	private void OnTriggerEnter(Collider other)
 	{
-		if (LapTimeManager.secondCount <= 9)
-		{
-			secondLabel.GetComponent<Text>().text = "0" + LapTimeManager.secondCount + ".";
-		}
-		else
-		{
-			secondLabel.GetComponent<Text>().text = "" + LapTimeManager.secondCount + ".";
-		}
+		// Increment lap count as the player completes the lap
+		lapsCompleted += 1;
 
-		if (LapTimeManager.minuteCount <= 9)
-		{
-			minuteLabel.GetComponent<Text>().text = "0" + LapTimeManager.minuteCount + ":";
-		}
-		else
-		{
-			minuteLabel.GetComponent<Text>().text = "" + LapTimeManager.minuteCount + ":";
-		}
+		// Get the previous best lap time from Unity's Player Preferences
+		rawTime = PlayerPrefs.GetFloat("RawTime");
 
-		milliSecLabel.GetComponent<Text>().text = "" + LapTimeManager.milliSecCount;
+		// Update the best time label only if the racers beat their previous lap time record 
+		if (LapTimeManager.rawTime <= rawTime)
+		{
+			// Handle UI for the best lap time label
+			if (LapTimeManager.secondCount <= 9)
+			{
+				secondLabel.GetComponent<Text>().text = "0" + LapTimeManager.secondCount + ".";
+			}
+			else
+			{
+				secondLabel.GetComponent<Text>().text = "" + LapTimeManager.secondCount + ".";
+			}
+
+			if (LapTimeManager.minuteCount <= 9)
+			{
+				minuteLabel.GetComponent<Text>().text = "0" + LapTimeManager.minuteCount + ":";
+			}
+			else
+			{
+				minuteLabel.GetComponent<Text>().text = "" + LapTimeManager.minuteCount + ":";
+			}
+
+			milliSecLabel.GetComponent<Text>().text = "" + LapTimeManager.milliSecCount;
+		}
 
 		// save player's best lap time for future races
 		PlayerPrefs.SetInt("minSave", LapTimeManager.minuteCount);
 		PlayerPrefs.SetInt("secSave", LapTimeManager.secondCount);
 		PlayerPrefs.SetFloat("milliSecSave", LapTimeManager.milliSecCount);
+		PlayerPrefs.SetFloat("RawTime", LapTimeManager.rawTime);
 
+		// Reset our lap timer once the racer completes the lap
 		LapTimeManager.minuteCount = 0;
 		LapTimeManager.secondCount = 0;
 		LapTimeManager.milliSecCount = 0;
+		LapTimeManager.rawTime = 0;
 
+		// Updated laps completed by the racer
+		lapCounter.GetComponent<Text>().text = "" + lapsCompleted;
+
+		// Activate the trigger placed at the half way of the track 
+		// when lap is completed
 		HalfwayTrigger.SetActive(true);
 		LapCompleteTrigger.SetActive(false);
 	}
