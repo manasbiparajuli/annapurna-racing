@@ -15,6 +15,11 @@ public class ButtonClicks : MonoBehaviour
 		SceneManager.LoadScene(0);
 	}
 
+	public void GameCredits()
+	{
+		SceneManager.LoadScene(3);
+	}
+
 	public void QuitGame()
 	{
 		// save any game data here

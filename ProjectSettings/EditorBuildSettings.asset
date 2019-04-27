@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AnnapurnaCircuit.unity
     guid: 4a308bd145903b6448a1dd8c00420af8
+  - enabled: 1
+    path: Assets/Scenes/GameCredits.unity
+    guid: 6c6534722ea54ff47a15923ff8b17201
   m_configObjects: {}
