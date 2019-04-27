@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 37715d47c602ec042a99daf71b81094b
   - enabled: 1
-    path: Assets/Scenes/TrackSelection.unity
+    path: Assets/Scenes/TrackAndCarSelection.unity
     guid: e6008dc6a4fca9745a249efc7aec1d7f
   - enabled: 1
     path: Assets/Scenes/AnnapurnaCircuit.unity

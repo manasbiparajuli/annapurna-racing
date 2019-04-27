@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 1012367211}
   - component: {fileID: 1012367210}
   m_Layer: 5
-  m_Name: TrackSelectText
+  m_Name: RandomTrackCarText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,7 +643,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Select Track
+  m_Text: Random
 --- !u!222 &1012367211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1129,7 +1129,7 @@ GameObject:
   - component: {fileID: 2047261760}
   - component: {fileID: 2047261759}
   m_Layer: 5
-  m_Name: TrackSelectButton
+  m_Name: RandomizeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1198,8 +1198,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1087784413}
-        m_MethodName: TrackSelect
+      - m_Target: {fileID: 0}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

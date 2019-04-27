@@ -7,11 +7,6 @@ public class ButtonClicks : MonoBehaviour
 {
 	public void PlayGame()
 	{
-		SceneManager.LoadScene(2);
-	}
-
-	public void TrackSelect()
-	{
 		SceneManager.LoadScene(1);
 	}
 
