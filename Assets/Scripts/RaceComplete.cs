@@ -16,36 +16,42 @@ public class RaceComplete : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		
+		if (TimeMode.isTimeModeSelected)
+		{
+			// Race Time Mode selected
+		}
 
-		// Disable the box collider for the race complete trigger
-		this.GetComponent<BoxCollider>().enabled = false;
+		else
+		{
+			// Disable the box collider for the race complete trigger
+			this.GetComponent<BoxCollider>().enabled = false;
 
-		// Disable car controllers after the race is completed
-		playerCar.SetActive(false);
-		AICar.SetActive(false);
-		completeTrigger.SetActive(false);
+			// Disable car controllers after the race is completed
+			playerCar.SetActive(false);
+			AICar.SetActive(false);
+			completeTrigger.SetActive(false);
 
-		// Stop AI cars when race ends
-		CarController.m_Topspeed = 0.0f;
+			// Stop AI cars when race ends
+			CarController.m_Topspeed = 0.0f;
 
-		playerCar.GetComponent<CarController>().enabled = false;
-		AICar.GetComponent<CarController>().enabled = false;
-		playerCar.GetComponent<CarUserControl>().enabled = false;
-		AICar.GetComponent<CarAIControl>().enabled = false;
+			playerCar.GetComponent<CarController>().enabled = false;
+			AICar.GetComponent<CarController>().enabled = false;
+			playerCar.GetComponent<CarUserControl>().enabled = false;
+			AICar.GetComponent<CarAIControl>().enabled = false;
 
-		playerCar.SetActive(true);
-		AICar.SetActive(false);
+			playerCar.SetActive(true);
+			AICar.SetActive(false);
 
-		playerCar.GetComponent<CarAudio>().StopSound();
-		playerCar.GetComponent<CarAudio>().enabled = false;
-		AICar.GetComponent<CarAudio>().StopSound();
-		AICar.GetComponent<CarAudio>().enabled = false;
+			playerCar.GetComponent<CarAudio>().StopSound();
+			playerCar.GetComponent<CarAudio>().enabled = false;
+			AICar.GetComponent<CarAudio>().StopSound();
+			AICar.GetComponent<CarAudio>().enabled = false;
 
-		raceCompleteCamera.SetActive(true);
-		levelMusic.SetActive(false);
-		cameraViewModes.SetActive(false);
+			raceCompleteCamera.SetActive(true);
+			levelMusic.SetActive(false);
+			cameraViewModes.SetActive(false);
 
-		raceCompleteMusic.Play();
+			raceCompleteMusic.Play();
+		}
 	}
 }

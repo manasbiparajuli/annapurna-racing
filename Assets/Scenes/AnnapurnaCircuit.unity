@@ -685,7 +685,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.9e-44, y: 1.81e-43, z: 7e-45, w: -3.88e-43}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -13999,8 +13999,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1738779907}
   - component: {fileID: 1738779906}
+  - component: {fileID: 1738779908}
   m_Layer: 0
-  m_Name: ScoreMode
+  m_Name: GameModes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14039,6 +14040,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738779908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738779905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 867340bf09f456b45aa81f9565a7039e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedGameMode: 0
+  InternalScore: 0
+  RaceUI: {fileID: 0}
+  ScoreUI: {fileID: 0}
+  AICar: {fileID: 1250146424}
+  ScoreLabel: {fileID: 0}
+  ScoreModeObjects: {fileID: 0}
 --- !u!1 &1762682244
 GameObject:
   m_ObjectHideFlags: 0
