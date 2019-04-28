@@ -14,7 +14,7 @@ public class CashDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+		TotalCash = PlayerPrefs.GetInt("SavedCash");        
     }
 
     // Update is called once per frame

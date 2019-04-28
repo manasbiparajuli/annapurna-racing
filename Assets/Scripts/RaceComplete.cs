@@ -52,6 +52,12 @@ public class RaceComplete : MonoBehaviour
 			cameraViewModes.SetActive(false);
 
 			raceCompleteMusic.Play();
+
+			// Add race earnings to the player's bank for completing the race
+			CashDisplay.TotalCash += 300;
+
+			// Store the player's total earnings to internal memory
+			PlayerPrefs.SetInt("SavedCash", CashDisplay.TotalCash);
 		}
 	}
 }

@@ -6,8 +6,10 @@ public class CustomizeCar : MonoBehaviour
 {
 	public GameObject RedCarBody;
 	public GameObject BlueCarBody;
+	public GameObject GreenCarBody;
 
-	public int CarImport; // 1 = RED, 2 = Blue
+	// 1 = RED, 2 = Blue, 3= Green
+	public int CarImport; 
 
 	// Start is called before the first frame update
 	void Start()
@@ -26,5 +28,11 @@ public class CustomizeCar : MonoBehaviour
 		{
 			BlueCarBody.SetActive(true);
 		}
-    }
+
+		// Green Car has been selected
+		else if (CarImport == 3)
+		{
+			GreenCarBody.SetActive(true);
+		}
+	}
 }

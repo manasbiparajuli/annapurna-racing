@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkyboxRotation : MonoBehaviour
 {
-	private float rotationSpeed = 5.0f;
+	private readonly float rotationSpeed = 5.0f;
 
     // Update is called once per frame
     void Update()

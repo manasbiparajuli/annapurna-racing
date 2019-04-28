@@ -12,6 +12,7 @@ public class GameModeSelect : MonoBehaviour
 	public void RaceMode()
 	{
 		GameMode = 0;
+		TrackSelected.SetActive(true);
 	}
 
 	public void ScoreMode()

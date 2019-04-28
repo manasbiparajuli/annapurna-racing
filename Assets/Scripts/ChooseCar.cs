@@ -18,4 +18,10 @@ public class ChooseCar : MonoBehaviour
 		CarType = 2;
 		TrackPanel.SetActive(true);
 	}
+
+	public void GreenCar()
+	{
+		CarType = 3;
+		TrackPanel.SetActive(true);
+	}
 }

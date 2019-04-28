@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.50176036, g: 0.27028432, b: 0.21009636, a: 1}
+  m_IndirectSpecularColor: {r: 0.4923033, g: 0.2639704, b: 0.2056809, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -685,7 +685,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: -3.11e-43, y: -1.114e-42, z: 6e-45, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1969,6 +1969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RedCarBody: {fileID: 352861892}
   BlueCarBody: {fileID: 95750479}
+  GreenCarBody: {fileID: 1984946122}
   CarImport: 0
 --- !u!4 &476247741
 Transform:
@@ -10932,6 +10933,7 @@ Transform:
   - {fileID: 1204274304}
   - {fileID: 352861893}
   - {fileID: 95750480}
+  - {fileID: 1984946123}
   m_Father: {fileID: 1204274336}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11843,6 +11845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249614736}
   - component: {fileID: 1249614735}
+  - component: {fileID: 1249614737}
   m_Layer: 0
   m_Name: CameraChangeManager
   m_TagString: Untagged
@@ -11880,6 +11883,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1249614737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249614734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9bb81f29a4028e4999fdb0eda37e465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1250146424 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100064, guid: 0fb4610dba67fc24cb2a6674fb155fc1,
@@ -14000,6 +14015,7 @@ GameObject:
   - component: {fileID: 1738779907}
   - component: {fileID: 1738779906}
   - component: {fileID: 1738779908}
+  - component: {fileID: 1738779909}
   m_Layer: 0
   m_Name: GameModes
   m_TagString: Untagged
@@ -14034,7 +14050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738779905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 231.95708, y: 24.340569, z: 790.1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14053,12 +14069,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedGameMode: 0
-  InternalScore: 0
-  RaceUI: {fileID: 0}
-  ScoreUI: {fileID: 0}
   AICar: {fileID: 1250146424}
-  ScoreLabel: {fileID: 0}
-  ScoreModeObjects: {fileID: 0}
+--- !u!114 &1738779909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738779905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7849ca2da6e85f943877d05d39775f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedGameMode: 0
+  RaceUI: {fileID: 1131632521}
+  AICar: {fileID: 1250146424}
 --- !u!1 &1762682244
 GameObject:
   m_ObjectHideFlags: 0
@@ -14684,6 +14710,83 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
+--- !u!1 &1984946122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1984946123}
+  - component: {fileID: 1984946125}
+  - component: {fileID: 1984946124}
+  m_Layer: 0
+  m_Name: SkyCarBodyGreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1984946123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984946122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1204274346}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1984946124
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984946122}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 47ea8cc7bb8ac2f4f8f4d4632169ec04, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1984946125
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984946122}
+  m_Mesh: {fileID: 4300062, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
 --- !u!1 &1992589989
 GameObject:
   m_ObjectHideFlags: 0
