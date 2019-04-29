@@ -7,17 +7,17 @@ public class ButtonClicks : MonoBehaviour
 {
 	public void PlayGame()
 	{
-		SceneManager.LoadScene(1);
+		SceneManager.LoadScene(2);
 	}
 
 	public void MainMenu()
 	{
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene(1);
 	}
 
 	public void GameCredits()
 	{
-		SceneManager.LoadScene(3);
+		SceneManager.LoadScene(4);
 	}
 
 	public void QuitGame()
@@ -35,6 +35,6 @@ public class ButtonClicks : MonoBehaviour
 	// Button clicks for track selections
 	public void TrackAnnapurnaCircuit()
 	{
-		SceneManager.LoadScene(2);
+		SceneManager.LoadScene(3);
 	}
 }

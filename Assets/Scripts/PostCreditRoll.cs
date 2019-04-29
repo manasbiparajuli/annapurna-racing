@@ -18,6 +18,6 @@ public class PostCreditRoll : MonoBehaviour
 		yield return new WaitForSeconds(10);
 
 		// load the main menu scene
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene(1);
 	}
 }
