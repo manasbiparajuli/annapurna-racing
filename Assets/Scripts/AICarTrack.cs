@@ -5,28 +5,15 @@ using UnityEngine;
 public class AICarTrack : MonoBehaviour
 {
 	public GameObject Tracker;
-	public GameObject[] AITracker = new GameObject[4];
+	public GameObject[] AITracker = new GameObject[25];
 	public int trackerNumber = 0;
-	private int numberOfWayPoints = 4;
+	private int numberOfWayPoints = 25;
 
 	// Update is called once per frame
 	void Update()
     {
-		//TODO: make the following code more efficient
-		if (trackerNumber == 0)
-		{
-			Tracker.transform.position = AITracker[0].transform.position;
-		}
-
-		if (trackerNumber == 1)
-		{
-			Tracker.transform.position = AITracker[1].transform.position;
-		}
-
-		if (trackerNumber == 2)
-		{
-			Tracker.transform.position = AITracker[2].transform.position;
-		}
+		// move the AI car's position to the next waypoint in the track
+		Tracker.transform.position = AITracker[trackerNumber].transform.position;
 	}
 
 	private IEnumerator OnTriggerEnter(Collider other)
@@ -41,7 +28,7 @@ public class AICarTrack : MonoBehaviour
 			{
 				trackerNumber = 0;
 			}
-			yield return new WaitForSeconds(1);
+			yield return new WaitForSeconds(0.5f);
 			this.GetComponent<BoxCollider>().enabled = true;
 		}
 	}
