@@ -45,6 +45,7 @@ public class RaceCountdown : MonoBehaviour
 		// Play "Go Audio" to signal the start of the race
 		yield return new WaitForSeconds(1);
 		countDown.SetActive(false);
+		countDown.GetComponent<Text>().text = "GO!";
 		goAudio.Play();
 		levelMusic.Play();
 

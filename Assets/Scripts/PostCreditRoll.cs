@@ -15,7 +15,7 @@ public class PostCreditRoll : MonoBehaviour
 	// showing the main menu to the player
 	IEnumerator PostCredit()
 	{
-		yield return new WaitForSeconds(10);
+		yield return new WaitForSeconds(6);
 
 		// load the main menu scene
 		SceneManager.LoadScene(1);

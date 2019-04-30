@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
+using UnityEngine.SceneManagement;
 
 public class RaceComplete : MonoBehaviour
 {
@@ -58,6 +59,17 @@ public class RaceComplete : MonoBehaviour
 
 			// Store the player's total earnings to internal memory
 			PlayerPrefs.SetInt("SavedCash", CashDisplay.TotalCash);
+
+			// Take the player to the main menu after the race completes
+			StartCoroutine(DisplayMainMenu());
+		}
+
+		// Wait for 6 seconds before displaying the main menu to the player
+		IEnumerator DisplayMainMenu()
+		{
+			yield return new WaitForSeconds(6);
+
+			SceneManager.LoadScene(1);
 		}
 	}
 }
