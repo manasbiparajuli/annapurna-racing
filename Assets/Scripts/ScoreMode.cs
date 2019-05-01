@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Vehicles.Car;
 
 public class ScoreMode : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class ScoreMode : MonoBehaviour
 	[SerializeField] public GameObject PositionDisplayText;
 	[SerializeField] public GameObject ScoreLabel;
 	[SerializeField] public GameObject ScoreModeObjects;
+	[SerializeField] public GameObject PlayerCar;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +34,7 @@ public class ScoreMode : MonoBehaviour
 			ScoreUI.SetActive(true);
 			ScoreModeObjects.SetActive(true);
 		}
-    }
+	}
 
     // Update is called once per frame
     void Update()
