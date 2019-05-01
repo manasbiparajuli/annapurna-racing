@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.49029458, g: 0.26256117, b: 0.20483476, a: 1}
+  m_IndirectSpecularColor: {r: 0.49322194, g: 0.26461983, b: 0.20608497, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1655,7 +1655,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0.10040315, y: NaN, z: NaN, w: 0}
+  m_BoundingSphereOverride: {x: 0.001, y: 0, z: 1e-45, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -22798,7 +22798,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 209e3d36f2ba4b1479d9f01a59c70ad1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f0da8c94e9b751a4d8303c852fe93474, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.26
   m_Pitch: 1
@@ -23027,7 +23027,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338635617}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1338635620
 Camera:
   m_ObjectHideFlags: 0
@@ -29462,9 +29462,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1c923cad04e504b408728158c7e838d4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6e844542f125cca468b803c40d80db4b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.29
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
