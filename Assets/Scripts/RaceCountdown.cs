@@ -41,11 +41,16 @@ public class RaceCountdown : MonoBehaviour
 		getReady.Play();
 		countDown.SetActive(true);
 
-		// Countdown has ended. Player can now start racing
-		// Play "Go Audio" to signal the start of the race
+		// Display "Go" to signal the start of race
 		yield return new WaitForSeconds(1);
 		countDown.SetActive(false);
 		countDown.GetComponent<Text>().text = "GO!";
+		countDown.SetActive(true);
+
+		// Countdown has ended. Player can now start racing
+		// Play "Go Audio" to signal the start of the race
+		yield return new WaitForSeconds(0.5f);
+		countDown.SetActive(false);
 		goAudio.Play();
 		levelMusic.Play();
 

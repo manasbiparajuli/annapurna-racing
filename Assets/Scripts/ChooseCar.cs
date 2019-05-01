@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ChooseCar : MonoBehaviour
 {
-	public static int CarType; // 1 = RED, 2 = Blue
+	// 1 = RED, 2 = Blue, 3= Green
+	public static int CarType; 
 	[SerializeField] public GameObject TrackPanel;
 
 	public void RedCar()

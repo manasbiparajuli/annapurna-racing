@@ -26,5 +26,4 @@ public class GameModeSelect : MonoBehaviour
 		GameMode = 2;
 		TrackSelected.SetActive(true);
 	}
-
 }

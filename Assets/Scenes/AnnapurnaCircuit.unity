@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.48941028, g: 0.26198667, b: 0.2043714, a: 1}
+  m_IndirectSpecularColor: {r: 0.48962748, g: 0.26211914, b: 0.20453307, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1135,7 +1135,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.7715979e-31, z: 9.19e-43, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: -6.683039e-39, z: 9.19e-43, w: -1.572795e-39}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -6435,8 +6435,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011444, y: -4.2}
-  m_SizeDelta: {x: 160, y: 192.9}
+  m_AnchoredPosition: {x: 8.3, y: -19}
+  m_SizeDelta: {x: 299.8, y: 222.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &919317171
 Animator:
@@ -20141,6 +20141,8 @@ MonoBehaviour:
   RaceUI: {fileID: 1131632521}
   ScoreUI: {fileID: 67338253}
   AICar: {fileID: 1250146424}
+  AICarWaypoints: {fileID: 1789846744}
+  PositionDisplayText: {fileID: 1776460165}
   ScoreLabel: {fileID: 1579931040}
   ScoreModeObjects: {fileID: 189597805}
 --- !u!4 &1738779907

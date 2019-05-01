@@ -12,6 +12,8 @@ public class ScoreMode : MonoBehaviour
 	[SerializeField] public GameObject RaceUI;
 	[SerializeField] public GameObject ScoreUI;
 	[SerializeField] public GameObject AICar;
+	[SerializeField] public GameObject AICarWaypoints;
+	[SerializeField] public GameObject PositionDisplayText;
 	[SerializeField] public GameObject ScoreLabel;
 	[SerializeField] public GameObject ScoreModeObjects;
 
@@ -25,6 +27,8 @@ public class ScoreMode : MonoBehaviour
 		{
 			AICar.SetActive(false);
 			RaceUI.SetActive(false);
+			PositionDisplayText.SetActive(false);
+			AICarWaypoints.SetActive(false);
 			ScoreUI.SetActive(true);
 			ScoreModeObjects.SetActive(true);
 		}
