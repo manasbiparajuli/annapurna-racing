@@ -42,6 +42,6 @@ public class LoadLapTime : MonoBehaviour
 		{
 			secDisplay.GetComponent<Text>().text = "" + secCount + ".";
 		}
-		milliSecDisplay.GetComponent<Text>().text = "" + Mathf.FloorToInt(milliSecCount);
+		milliSecDisplay.GetComponent<Text>().text = "" + Mathf.FloorToInt(milliSecCount).ToString();
     }
 }

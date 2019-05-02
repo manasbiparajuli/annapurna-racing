@@ -22,6 +22,9 @@ public class ScoreMode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		// Reset the score
+		CurrentScore = 0;
+
 		// Get the game mode that the racer selected
 		selectedGameMode = GameModeSelect.GameMode;       
 
@@ -33,6 +36,8 @@ public class ScoreMode : MonoBehaviour
 			AICarWaypoints.SetActive(false);
 			ScoreUI.SetActive(true);
 			ScoreModeObjects.SetActive(true);
+
+
 		}
 	}
 

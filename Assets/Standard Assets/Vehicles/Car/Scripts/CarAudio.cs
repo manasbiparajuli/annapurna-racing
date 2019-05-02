@@ -50,7 +50,7 @@ namespace UnityStandardAssets.Vehicles.Car
         private CarController m_CarController; // Reference to car we are controlling
 
 
-        private void StartSound()
+        public void StartSound()
         {
             // get the carcontroller ( this will not be null as we have require component)
             m_CarController = GetComponent<CarController>();

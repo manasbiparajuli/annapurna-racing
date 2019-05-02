@@ -533,7 +533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &262206116
 RectTransform:
   m_ObjectHideFlags: 0
@@ -545,12 +545,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -253}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 553534863}
-  m_RootOrder: 5
+  m_Father: {fileID: 1170338571}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -210, y: 210}
+  m_AnchoredPosition: {x: 120, y: -99}
   m_SizeDelta: {x: 186.52, y: 42.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &262206117
@@ -706,7 +706,6 @@ RectTransform:
   - {fileID: 885626857}
   - {fileID: 130574610}
   - {fileID: 671380281}
-  - {fileID: 262206116}
   m_Father: {fileID: 1170338571}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1398,6 +1397,7 @@ MonoBehaviour:
   largeButton: {fileID: 179982964}
   textClick: {fileID: 1143554365}
   menuItems: {fileID: 553534862}
+  cashDisplay: {fileID: 262206115}
 --- !u!1 &1143554365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1571,7 @@ RectTransform:
   - {fileID: 553534863}
   - {fileID: 179982965}
   - {fileID: 1143554366}
+  - {fileID: 262206116}
   m_Father: {fileID: 635401301}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1898,7 +1899,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -11,7 +11,8 @@ public class RacePositionDown : MonoBehaviour
 	{
 		if (other.tag.Equals("CarPosition"))
 		{
-			displayPosition.GetComponent<Text>().text = "SECOND";
+			// display "Second"
+			displayPosition.GetComponent<Text>().text = "";
 		}
 	}
 }

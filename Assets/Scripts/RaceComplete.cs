@@ -64,10 +64,10 @@ public class RaceComplete : MonoBehaviour
 			StartCoroutine(DisplayMainMenu());
 		}
 
-		// Wait for 6 seconds before displaying the main menu to the player
+		// Wait for 10 seconds before displaying the main menu to the player
 		IEnumerator DisplayMainMenu()
 		{
-			yield return new WaitForSeconds(6);
+			yield return new WaitForSeconds(10);
 
 			SceneManager.LoadScene(1);
 		}
