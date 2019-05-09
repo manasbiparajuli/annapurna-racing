@@ -55,10 +55,10 @@ public class RaceComplete : MonoBehaviour
 			raceCompleteMusic.Play();
 
 			// Add race earnings to the player's bank for completing the race
-			CashDisplay.TotalCash += 300;
+			CashDisplay.m_TotalCash += 300;
 
 			// Store the player's total earnings to internal memory
-			PlayerPrefs.SetInt("SavedCash", CashDisplay.TotalCash);
+			PlayerPrefs.SetInt("SavedCash", CashDisplay.m_TotalCash);
 
 			// Take the player to the main menu after the race completes
 			StartCoroutine(DisplayMainMenu());

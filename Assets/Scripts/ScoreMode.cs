@@ -26,7 +26,7 @@ public class ScoreMode : MonoBehaviour
 		CurrentScore = 0;
 
 		// Get the game mode that the racer selected
-		selectedGameMode = GameModeSelect.GameMode;       
+		selectedGameMode = GameModeSelect.m_GameMode;       
 
 		if (selectedGameMode == 1)
 		{

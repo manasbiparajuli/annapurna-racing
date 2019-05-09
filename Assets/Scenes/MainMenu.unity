@@ -1394,10 +1394,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f5f9948e76a5d418d68ddb6740ebc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  largeButton: {fileID: 179982964}
-  textClick: {fileID: 1143554365}
-  menuItems: {fileID: 553534862}
-  cashDisplay: {fileID: 262206115}
+  m_LargeButton: {fileID: 179982964}
+  m_TextClick: {fileID: 1143554365}
+  m_MenuItems: {fileID: 553534862}
+  m_CashDisplay: {fileID: 262206115}
 --- !u!1 &1143554365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,8 +1609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5029f2b80c372244490addbc469c4166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CashValue: 0
-  CashPanel: {fileID: 262206115}
+  m_CashPanel: {fileID: 262206115}
 --- !u!4 &1240439213
 Transform:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class RaceMode : MonoBehaviour
     void Start()
     {
 		// Get the game mode that the racer selected
-		selectedGameMode = GameModeSelect.GameMode;       
+		selectedGameMode = GameModeSelect.m_GameMode;       
 
 		if (selectedGameMode == 0)
 		{

@@ -13,7 +13,7 @@ public class Unlockables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		cashValue = CashDisplay.TotalCash;
+		cashValue = CashDisplay.m_TotalCash;
 
 		if (cashValue >= greenCarUnlockPrice)
 		{
@@ -28,8 +28,8 @@ public class Unlockables : MonoBehaviour
 
 		// Player has purchased the green car
 		// Update the player preferences for the cash withheld by the player
-		CashDisplay.TotalCash -= greenCarUnlockPrice;
-		PlayerPrefs.SetInt("SavedCash", CashDisplay.TotalCash);
+		CashDisplay.m_TotalCash -= greenCarUnlockPrice;
+		PlayerPrefs.SetInt("SavedCash", CashDisplay.m_TotalCash);
 		PlayerPrefs.SetInt("GreenCarBought", greenCarUnlockPrice);
 	}
 }

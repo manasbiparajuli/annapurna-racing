@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de8232764270b545b0bdd4b3848a0cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackPanel: {fileID: 17686030}
+  m_TrackPanel: {fileID: 533571799}
 --- !u!4 &627665849
 Transform:
   m_ObjectHideFlags: 0
@@ -1335,7 +1335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f725ddaf7055c2340bf3f93cf4460ff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackSelected: {fileID: 533571799}
+  m_TrackSelected: {fileID: 533571799}
 --- !u!114 &903651324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2621,8 +2621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5029f2b80c372244490addbc469c4166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CashValue: 0
-  CashPanel: {fileID: 181318120}
+  m_CashPanel: {fileID: 181318120}
 --- !u!4 &1794444208
 Transform:
   m_ObjectHideFlags: 0
