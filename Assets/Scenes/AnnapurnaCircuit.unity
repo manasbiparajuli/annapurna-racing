@@ -1655,7 +1655,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.5905e-41, y: 0, z: 0, w: 2.1e-44}
+  m_BoundingSphereOverride: {x: 0, y: 2.0284824e+18, z: 6.01e-43, w: 4.5e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -3255,15 +3255,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c64443414fede4f809a3e9e3951e5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LapCompleteTrigger: {fileID: 286492682}
-  HalfwayTrigger: {fileID: 868150607}
-  minuteLabel: {fileID: 1650046499}
-  secondLabel: {fileID: 1135742505}
-  milliSecLabel: {fileID: 345674449}
-  lapCounter: {fileID: 1274090472}
-  raceComplete: {fileID: 1011576192}
-  lapsCompleted: 0
-  rawTime: 0
+  m_LapCompleteTrigger: {fileID: 286492682}
+  m_HalfwayTrigger: {fileID: 868150607}
+  m_MinuteLabel: {fileID: 1650046499}
+  m_SecondLabel: {fileID: 1135742505}
+  m_MilliSecLabel: {fileID: 345674449}
+  m_LapCounter: {fileID: 1274090472}
+  m_RaceComplete: {fileID: 1011576192}
+  m_LapsCompleted: 0
+  m_RawTime: 0
 --- !u!1 &286532293
 GameObject:
   m_ObjectHideFlags: 0
@@ -6804,7 +6804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc47da28ceffa242b3c9937f87aeb05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayPosition: {fileID: 1776460165}
+  m_DisplayCurrentPosition: {fileID: 1776460165}
 --- !u!65 &606080330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9315,8 +9315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b96cffec0ed839245badefb01edb6fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LapCompleteTrigger: {fileID: 286492682}
-  HalfWayTrigger: {fileID: 868150607}
+  m_LapCompleteTrigger: {fileID: 286492682}
+  m_HalfWayTrigger: {fileID: 868150607}
 --- !u!4 &870049923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400794, guid: a0caed2329b1ff545b145d48d6ef85d7,
@@ -11489,12 +11489,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676d6c6d4b023f4409830c0761d191e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDown: {fileID: 919317169}
-  LapTimer: {fileID: 655489822}
-  CarControls: {fileID: 829685188}
-  getReady: {fileID: 7327493592160620903}
-  goAudio: {fileID: 7327493591051354041}
-  levelMusic: {fileID: 2032579725}
+  m_CountDown: {fileID: 919317169}
+  m_LapTimeManager: {fileID: 655489822}
+  m_CarControlManager: {fileID: 829685188}
+  m_GetReady: {fileID: 7327493592160620903}
+  m_GoAudio: {fileID: 7327493591051354041}
+  m_LevelMusic: {fileID: 2032579725}
 --- !u!4 &1010390083
 Transform:
   m_ObjectHideFlags: 0
@@ -11613,13 +11613,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6bd7af6617ae147b326c6f3c7c735c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCar: {fileID: 1203787992}
-  AICar: {fileID: 1250146424}
-  raceCompleteCamera: {fileID: 1839976778}
-  cameraViewModes: {fileID: 335746959}
-  levelMusic: {fileID: 2032579723}
-  completeTrigger: {fileID: 286492682}
-  raceCompleteMusic: {fileID: 1331221539}
+  m_PlayerCar: {fileID: 1203787992}
+  m_AICar: {fileID: 1250146424}
+  m_RaceCompleteCamera: {fileID: 1839976778}
+  m_CameraViewModes: {fileID: 335746959}
+  m_LevelMusic: {fileID: 2032579723}
+  m_LapCompleteTrigger: {fileID: 286492682}
+  m_RaceCompleteMusic: {fileID: 1331221539}
 --- !u!1 &1015438336
 GameObject:
   m_ObjectHideFlags: 0
@@ -22916,12 +22916,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc702c159c168f419e18bfa56793cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minCount: 0
-  secCount: 0
-  milliSecCount: 0
-  minDisplay: {fileID: 1650046499}
-  secDisplay: {fileID: 1135742505}
-  milliSecDisplay: {fileID: 345674449}
+  m_MinuteCount: 0
+  m_SecondCount: 0
+  m_MilliSecCount: 0
+  m_MinDisplay: {fileID: 1650046499}
+  m_SecDisplay: {fileID: 1135742505}
+  m_MilliSecDisplay: {fileID: 345674449}
 --- !u!4 &1304336894
 Transform:
   m_ObjectHideFlags: 0
@@ -27743,16 +27743,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3199166a18f743343bed313d2b02fb76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedGameMode: 0
-  InternalScore: 0
-  RaceUI: {fileID: 1131632521}
-  ScoreUI: {fileID: 67338253}
-  AICar: {fileID: 1250146424}
-  AICarWaypoints: {fileID: 1789846744}
-  PositionDisplayText: {fileID: 1776460165}
-  ScoreLabel: {fileID: 1579931040}
-  ScoreModeObjects: {fileID: 189597805}
-  PlayerCar: {fileID: 1203787992}
+  m_RaceModeUI: {fileID: 1131632521}
+  m_ScoreModeUI: {fileID: 67338253}
+  m_AICar: {fileID: 1250146424}
+  m_AICarWaypoints: {fileID: 1789846744}
+  m_PositionDisplayText: {fileID: 1776460165}
+  m_ScoreValueLabel: {fileID: 1579931040}
+  m_ScoreModeObjects: {fileID: 189597805}
+  m_PlayerCar: {fileID: 1203787992}
 --- !u!4 &1738779907
 Transform:
   m_ObjectHideFlags: 0
@@ -27779,8 +27777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867340bf09f456b45aa81f9565a7039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedGameMode: 0
-  AICar: {fileID: 1250146424}
+  m_AICar: {fileID: 1250146424}
 --- !u!114 &1738779909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27793,9 +27790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7849ca2da6e85f943877d05d39775f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedGameMode: 0
-  RaceUI: {fileID: 1131632521}
-  AICar: {fileID: 1250146424}
+  m_RaceModeUI: {fileID: 1131632521}
+  m_AICar: {fileID: 1250146424}
 --- !u!1 &1762682244
 GameObject:
   m_ObjectHideFlags: 0
@@ -29040,7 +29036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa1ef91a78a7cba42bdacd0b7d1a203c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayPosition: {fileID: 1776460165}
+  m_DisplayCurrentPosition: {fileID: 1776460165}
 --- !u!65 &1883494027
 BoxCollider:
   m_ObjectHideFlags: 0

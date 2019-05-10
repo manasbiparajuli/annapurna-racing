@@ -661,11 +661,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 584df4710a8523546a565741718ebb99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingBar: {fileID: 477278833}
-  loadingBarText: {fileID: 641133353}
-  isLoadingBar: 0
-  loadingBarIncrement: 0.2
-  loadingBarTiming: 1
+  m_LoadingBar: {fileID: 477278833}
+  m_LoadingBarText: {fileID: 641133353}
+  m_LoadingBarIncrement: 0.2
+  m_LoadingBarTiming: 1
 --- !u!1 &1099357484
 GameObject:
   m_ObjectHideFlags: 0

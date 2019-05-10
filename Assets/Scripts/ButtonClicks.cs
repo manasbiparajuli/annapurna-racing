@@ -108,7 +108,7 @@ public class ButtonClicks : MonoBehaviour
 	void LoadControls()
 
 	NAME
-		LoadControls() - Dsiplays the Game Controls scene
+		LoadControls() - Displays the Game Controls scene
 
 	DESCRIPTION
 		The function loads the scene containing the information for game controls

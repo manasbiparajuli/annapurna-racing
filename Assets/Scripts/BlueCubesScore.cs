@@ -60,7 +60,7 @@ public class BlueCubesScore : MonoBehaviour
 	private void OnTriggerEnter(Collider a_Other)
 	{
 		// Update the overall score of the racer
-		ScoreMode.CurrentScore += m_BlueCubePoints;
+		ScoreMode.m_CurrentScore += m_BlueCubePoints;
 
 		// Disable the cube as the racer has passed through the object
 		gameObject.SetActive(false);

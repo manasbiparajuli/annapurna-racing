@@ -59,7 +59,7 @@ public class GamePauseMenu : MonoBehaviour
 	DATE
 		5/08/2019
 	*/
-	void Update()
+	private void Update()
     {
 		// Display the pause menu when the player presses
 		// "escape" or "p" on the keyboard
@@ -77,7 +77,7 @@ public class GamePauseMenu : MonoBehaviour
 				ContinueGame();
 			}
 		}
-	} /* Update() */
+	} /*void Update() */
 
 
 	/*
@@ -210,7 +210,7 @@ public class GamePauseMenu : MonoBehaviour
 		
 		// Load main menu
 		SceneManager.LoadScene(1);
-	} /* DisplayMainMenu() */
+	} /*void DisplayMainMenu() */
 
 	/*
 	RestartRace()
@@ -241,5 +241,5 @@ public class GamePauseMenu : MonoBehaviour
 		// Restart the race from the race track menu
 		SceneManager.LoadScene(2);
 
-	} /* RestartRace() */
+	} /*void RestartRace() */
 }

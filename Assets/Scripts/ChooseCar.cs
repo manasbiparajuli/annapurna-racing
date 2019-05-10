@@ -15,10 +15,11 @@ NAME
 SYNOPSIS
 	public class ChooseCar
 		-> m_CarType: static integer. Stores the three different types of car models present in the game
-		-> m_TrackPanel: a GameObject. Stores the track panel that contains the tracks in the game.
+		-> m_GameModePanel: a GameObject. Stores the game mode panels containing the game modes in the game
 
 DESCRIPTION
-	The script contains function to choose the car based on player's preferences and then activate the track panel
+	The script contains function to choose the car based on player's preferences and then activate the game 
+	mode panel
 
 AUTHOR
 	Manasbi Parajuli
@@ -31,7 +32,7 @@ public class ChooseCar : MonoBehaviour
 	// 1 = RED, 2 = Blue, 3= Green
 	public static int m_CarType;
 
-	[SerializeField] public GameObject m_TrackPanel;
+	[SerializeField] public GameObject m_GameModePanel;
 
 	/*
 	RedCar()
@@ -43,8 +44,9 @@ public class ChooseCar : MonoBehaviour
 		RedCar()
 
 	DESCRIPTION
-		The function updates the integer representation of the red car and stores in the static int variable m_CarType.
-		Then, it activates the track panel where the player now has the option to choose the track
+		The function updates the integer representation of the red car and stores in the static int 
+		variable m_CarType. Then, it activates the game mode panel where the player now has the 
+		option to choose the game mode
 
 	RETURNS
 		None
@@ -59,7 +61,7 @@ public class ChooseCar : MonoBehaviour
 	public void RedCar()
 	{
 		m_CarType = 1;
-		m_TrackPanel.SetActive(true);
+		m_GameModePanel.SetActive(true);
 	} /*void RedCar() */
 
 
@@ -73,8 +75,9 @@ public class ChooseCar : MonoBehaviour
 		BlueCar()
 
 	DESCRIPTION
-		The function updates the integer representation of the blue car and stores in the static int variable m_CarType.
-		Then, it activates the track panel where the player now has the option to choose the track
+		The function updates the integer representation of the blue car and stores in the static 
+		int variable m_CarType. Then, it activates the track panel where the player now has the 
+		option to choose the game mode
 
 	RETURNS
 		None
@@ -88,7 +91,7 @@ public class ChooseCar : MonoBehaviour
 	public void BlueCar()
 	{
 		m_CarType = 2;
-		m_TrackPanel.SetActive(true);
+		m_GameModePanel.SetActive(true);
 	} /* void BlueCar() */
 
 
@@ -102,8 +105,9 @@ public class ChooseCar : MonoBehaviour
 		GreenCar()
 
 	DESCRIPTION
-		The function updates the integer representation of the green car and stores in the static int variable m_CarType.
-		Then, it activates the track panel where the player now has the option to choose the track
+		The function updates the integer representation of the green car and stores in the static 
+		int variable m_CarType. Then, it activates the track panel where the player now has the 
+		option to choose the the game mode
 
 	RETURNS
 		None
@@ -117,6 +121,6 @@ public class ChooseCar : MonoBehaviour
 	public void GreenCar()
 	{
 		m_CarType = 3;
-		m_TrackPanel.SetActive(true);
+		m_GameModePanel.SetActive(true);
 	} /* void GreenCar() */
 }

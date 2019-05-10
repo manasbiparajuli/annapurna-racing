@@ -57,7 +57,7 @@ public class RedCubesScore : MonoBehaviour
 	private void OnTriggerEnter(Collider other)
 	{
 		// Update the overall score of the racer
-		ScoreMode.CurrentScore += m_RedCubePoints;
+		ScoreMode.m_CurrentScore += m_RedCubePoints;
 
 		// Disable the cube as the racer has passed through the object
 		gameObject.SetActive(false);

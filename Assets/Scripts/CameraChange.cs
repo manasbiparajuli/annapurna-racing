@@ -106,7 +106,6 @@ public class CameraChange : MonoBehaviour
 	DATE
 		5/08/2019
 	*/
-
 	IEnumerator CameraModeChange()
 	{
 		yield return new WaitForSeconds(0.01f);

@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de8232764270b545b0bdd4b3848a0cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackPanel: {fileID: 533571799}
+  m_GameModePanel: {fileID: 17686030}
 --- !u!4 &627665849
 Transform:
   m_ObjectHideFlags: 0
@@ -1904,8 +1904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 041218e4f7d04f3479f46d3d38bed85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greenButton: {fileID: 1515240921}
-  cashValue: 0
+  m_FakeGreenCarObject: {fileID: 1515240921}
 --- !u!4 &1328375670
 Transform:
   m_ObjectHideFlags: 0
@@ -1932,7 +1931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735e24a991f2ae84999834a333cdb27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fakeGreenCarObject: {fileID: 1515240921}
+  m_FakeGreenCarObject: {fileID: 1515240921}
 --- !u!1 &1389648693
 GameObject:
   m_ObjectHideFlags: 0
