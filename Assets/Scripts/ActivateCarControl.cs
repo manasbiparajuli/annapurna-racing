@@ -57,7 +57,7 @@ public class ActivateCarControl : MonoBehaviour
 	*/
 
 	void Start()
-    {
+	{
 		// Enable player control scripts
 		m_CarControl.GetComponent<CarController>().enabled = true;
 		m_CarControl.GetComponent<CarUserControl>().enabled = true;

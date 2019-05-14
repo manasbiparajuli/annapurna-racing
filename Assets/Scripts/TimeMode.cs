@@ -59,7 +59,7 @@ public class TimeMode : MonoBehaviour
 		5/08/2019
 	*/
 	void Start()
-    {
+	{
 		// Get the game mode that the racer selected
 		m_SelectedGameMode = GameModeSelect.m_GameMode;       
 
@@ -68,5 +68,5 @@ public class TimeMode : MonoBehaviour
 			m_IsTimeModeSelected = true;
 			m_AICar.SetActive(false);
 		}
-    } /* void Start() */
+	} /* void Start() */
 }

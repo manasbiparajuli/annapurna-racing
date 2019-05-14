@@ -61,7 +61,7 @@ public class CustomizeCar : MonoBehaviour
 		5/08/2019
 	*/
 	public void Start()
-    {
+	{
 		// Get the integer value of the car selected by the player
 		m_CarImport = ChooseCar.m_CarType;
 		

@@ -61,7 +61,7 @@ public class CameraChange : MonoBehaviour
 	*/
 
 	void Update()
-    {
+	{
 		// Allow the player to change between different camera modes
 		if (Input.GetButtonDown("ViewMode"))
 		{

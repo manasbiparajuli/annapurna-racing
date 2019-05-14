@@ -50,7 +50,8 @@ public class FinishRotate : MonoBehaviour
 		5/08/2019
 	*/
 	void Update()
-    {
-		transform.Rotate(0, 1, 0, Space.World);        
-    } /* void Update() */
+	{
+		transform.Rotate(0, 1, 0, Space.World);
+
+	} /* void Update() */
 }

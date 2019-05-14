@@ -61,9 +61,9 @@ public class CashDisplay : MonoBehaviour
 		5/08/2019
 	*/
 	void Start()
-    {
-		m_TotalCash = PlayerPrefs.GetInt("SavedCash");        
-    } /* void Start() */
+	{
+		m_TotalCash = PlayerPrefs.GetInt("SavedCash");
+	} /* void Start() */
 
 
 	/*
@@ -90,7 +90,7 @@ public class CashDisplay : MonoBehaviour
 	*/
 
 	void Update()
-    {
+	{
 		// Get the cash saved in the Player Preferences
 		m_CashValue = m_TotalCash;
 

@@ -80,7 +80,7 @@ public class ScoreMode : MonoBehaviour
 		5/08/2019
 	*/
 	private void Start()
-    {
+	{
 		// Reset the score at the start of the score mode
 		m_CurrentScore = 0;
 
@@ -123,8 +123,9 @@ public class ScoreMode : MonoBehaviour
 		5/08/2019
 	*/
 	private void Update()
-    {
+	{
 		m_InternalScore = m_CurrentScore;
 		m_ScoreValueLabel.GetComponent<Text>().text = "" + m_InternalScore;
+
 	} /* void Update() */
 }

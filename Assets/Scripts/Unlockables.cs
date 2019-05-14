@@ -68,7 +68,7 @@ public class Unlockables : MonoBehaviour
 		5/08/2019
 	*/
 	private void Update()
-    {
+	{
 		m_CashOwnedByPlayer = CashDisplay.m_TotalCash;
 
 		// Check if the player is eligible to buy the unlocked car

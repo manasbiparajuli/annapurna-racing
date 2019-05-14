@@ -52,8 +52,9 @@ public class SkyboxRotation : MonoBehaviour
 		5/08/2019
 	*/
 	private void Update()
-    {
+	{
 		//Sets the float value of "_Rotation", adjust it by Time.time and a multiplier.
 		RenderSettings.skybox.SetFloat("_Rotation", m_RotationSpeed * Time.time);
+
 	} /* void Update() */
 }

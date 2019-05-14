@@ -52,9 +52,9 @@ public class PostCreditRoll : MonoBehaviour
 		5/08/2019
 	*/
 	void Start()
-    {
+	{
 		StartCoroutine(PostCredit());
-    }
+	}
 
 
 	/*

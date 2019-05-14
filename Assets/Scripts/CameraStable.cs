@@ -58,7 +58,7 @@ public class CameraStable : MonoBehaviour
 		5/08/2019
 	*/
 	void Update()
-    {
+	{
 		m_RaceCarX = m_RaceCar.transform.eulerAngles.x;
 		m_RaceCarY = m_RaceCar.transform.eulerAngles.y;
 		m_RaceCarZ = m_RaceCar.transform.eulerAngles.z;
@@ -66,5 +66,5 @@ public class CameraStable : MonoBehaviour
 		// keep camera axis fixed on y-axis so that camera follows the car when it tilts
 		transform.eulerAngles = new Vector3(m_RaceCarX - m_RaceCarX, m_RaceCarY, m_RaceCarZ - m_RaceCarZ);
 
-    } /*void Update()*/
+	} /*void Update()*/
 }

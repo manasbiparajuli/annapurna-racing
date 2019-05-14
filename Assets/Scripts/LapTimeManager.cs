@@ -74,7 +74,7 @@ public class LapTimeManager : MonoBehaviour
 		5/08/2019
 	*/
 	private void Update()
-    {
+	{
 		// take lap time only when the race is ongoing
 		// disable recording time when the race completes
 		if (!LapComplete.m_IsRaceComplete)

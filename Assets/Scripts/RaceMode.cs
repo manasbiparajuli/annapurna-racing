@@ -61,7 +61,7 @@ public class RaceMode : MonoBehaviour
 		5/08/2019
 	*/
 	void Start()
-    {
+	{
 		// Get the game mode that the racer selected
 		m_SelectedGameMode = GameModeSelect.m_GameMode;       
 
@@ -71,5 +71,5 @@ public class RaceMode : MonoBehaviour
 			m_AICar.SetActive(true);
 			m_RaceModeUI.SetActive(true);
 		}
-    } /* void Start() */
+	} /* void Start() */
 }

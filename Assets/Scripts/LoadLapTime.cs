@@ -70,7 +70,7 @@ public class LoadLapTime : MonoBehaviour
 	*/
 
 	private void Start()
-    {
+	{
 		// Load the best lap times from Player Preferences
 		m_MinuteCount = PlayerPrefs.GetInt("minSave");
 		m_SecondCount = PlayerPrefs.GetInt("secSave");

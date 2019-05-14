@@ -64,9 +64,10 @@ public class ProgressBar : MonoBehaviour
 		5/08/2019
 	*/
 	private void Start()
-    {
+	{
 		StartCoroutine(LoadLoadingBar());
-    } /* void Start() */
+
+	} /* void Start() */
 
 
 	/*

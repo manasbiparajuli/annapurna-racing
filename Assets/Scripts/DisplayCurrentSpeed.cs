@@ -57,7 +57,7 @@ public class DisplayCurrentSpeed : MonoBehaviour
 		5/08/2019
 	*/
 	void Update()
-    {
+	{
 		// The Player's CarController class is only enabled after the race has began
 		if (m_PlayerCar.GetComponent<CarController>().enabled)
 		{

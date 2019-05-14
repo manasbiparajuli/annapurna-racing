@@ -60,7 +60,7 @@ public class GamePauseMenu : MonoBehaviour
 		5/08/2019
 	*/
 	private void Update()
-    {
+	{
 		// Display the pause menu when the player presses
 		// "escape" or "p" on the keyboard
 		if (Input.GetButtonDown("Pause"))
